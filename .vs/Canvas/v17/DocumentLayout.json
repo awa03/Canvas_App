@@ -1,0 +1,587 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\canvas\\dialog\\assignmentdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\assignmentdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\dialog\\assignmentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\assignmentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\canvas\\viewmodel\\assignmentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\assignmentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\coursedialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\coursedialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\instructorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\instructorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\selectedcourseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\selectedcourseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5207CFD0-E30B-4E77-AE8A-B0963F6531EE}|..\\Library\\Library.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\library\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5207CFD0-E30B-4E77-AE8A-B0963F6531EE}|..\\Library\\Library.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\library\\models\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\studentsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\studentsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\studentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\studentdialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\selectedinstructorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\selectedinstructorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\selectedinstructorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\selectedinstructorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\selectedcourseview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\selectedcourseview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\instructorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\instructorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\dialog\\coursedialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\coursedialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\selectedinstructorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\selectedinstructorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\selectedcourseview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\selectedcourseview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5207CFD0-E30B-4E77-AE8A-B0963F6531EE}|..\\Library\\Library.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\library\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5207CFD0-E30B-4E77-AE8A-B0963F6531EE}|..\\Library\\Library.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\library\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5207CFD0-E30B-4E77-AE8A-B0963F6531EE}|..\\Library\\Library.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\library\\services\\instructorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5207CFD0-E30B-4E77-AE8A-B0963F6531EE}|..\\Library\\Library.csproj|c:\\users\\43763\\onedrive\\desktop\\canvas\\library\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\dialog\\coursedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\coursedialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\viewmodel\\instructordialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:viewmodel\\instructordialogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\instructorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\instructorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\studentsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\studentsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\dialog\\studentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\studentdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\dialog\\studentdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\studentdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\dialog\\instructordialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\instructordialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\view\\studentsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:view\\studentsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\dialog\\instructordialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D1D5D9D-8243-45C4-BE30-E88118E718C1}|Canvas.csproj|solutionrelative:dialog\\instructordialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssignmentDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\AssignmentDialog.xaml",
+              "RelativeDocumentMoniker": "Dialog\\AssignmentDialog.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\AssignmentDialog.xaml",
+              "RelativeToolTip": "Dialog\\AssignmentDialog.xaml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC0AAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-14T01:22:57.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AssignmentDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\AssignmentDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialog\\AssignmentDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\AssignmentDialog.xaml.cs",
+              "RelativeToolTip": "Dialog\\AssignmentDialog.xaml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T22:12:46.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AssignmentDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\AssignmentDialogViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\AssignmentDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\AssignmentDialogViewModel.cs",
+              "RelativeToolTip": "ViewModel\\AssignmentDialogViewModel.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAkwIoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T01:23:19.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectedCourseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\SelectedCourseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\SelectedCourseViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\SelectedCourseViewModel.cs",
+              "RelativeToolTip": "ViewModel\\SelectedCourseViewModel.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAcwGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T21:32:31.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\CourseDialogViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\CourseDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\CourseDialogViewModel.cs",
+              "RelativeToolTip": "ViewModel\\CourseDialogViewModel.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAWwDgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:26:49.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InstructorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\InstructorViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\InstructorViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\InstructorViewModel.cs",
+              "RelativeToolTip": "ViewModel\\InstructorViewModel.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAqwDIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:47:50.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Models\\Assignment.cs",
+              "RelativeDocumentMoniker": "..\\Library\\Models\\Assignment.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Models\\Assignment.cs",
+              "RelativeToolTip": "..\\Library\\Models\\Assignment.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowBsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T02:29:06.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "..\\Library\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Models\\Course.cs",
+              "RelativeToolTip": "..\\Library\\Models\\Course.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAMwBsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T19:38:12.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\StudentDialogViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\StudentDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\StudentDialogViewModel.cs",
+              "RelativeToolTip": "ViewModel\\StudentDialogViewModel.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwGEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:26:43.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\StudentsViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\StudentsViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\StudentsViewModel.cs",
+              "RelativeToolTip": "ViewModel\\StudentsViewModel.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T02:20:42.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SelectedInstructorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\SelectedInstructorViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\SelectedInstructorViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\SelectedInstructorViewModel.cs",
+              "RelativeToolTip": "ViewModel\\SelectedInstructorViewModel.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAewF0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:24:20.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SelectedInstructorView.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedInstructorView.xaml",
+              "RelativeDocumentMoniker": "View\\SelectedInstructorView.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedInstructorView.xaml",
+              "RelativeToolTip": "View\\SelectedInstructorView.xaml",
+              "ViewState": "AQIAABMAAAAAAAAAAAArwB8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T18:23:38.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SelectedCourseView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedCourseView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SelectedCourseView.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedCourseView.xaml.cs",
+              "RelativeToolTip": "View\\SelectedCourseView.xaml.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAMwBEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T21:30:16.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InstructorView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\InstructorView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\InstructorView.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\InstructorView.xaml.cs",
+              "RelativeToolTip": "View\\InstructorView.xaml.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAADwvwIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:48:11.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CourseDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\CourseDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialog\\CourseDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\CourseDialog.xaml.cs",
+              "RelativeToolTip": "Dialog\\CourseDialog.xaml.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAD4vx8AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:25:16.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SelectedInstructorView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedInstructorView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SelectedInstructorView.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedInstructorView.xaml.cs",
+              "RelativeToolTip": "View\\SelectedInstructorView.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwBoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:24:01.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SelectedCourseView.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedCourseView.xaml",
+              "RelativeDocumentMoniker": "View\\SelectedCourseView.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\SelectedCourseView.xaml",
+              "RelativeToolTip": "View\\SelectedCourseView.xaml",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAEMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T21:29:35.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "..\\Library\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Services\\StudentService.cs",
+              "RelativeToolTip": "..\\Library\\Services\\StudentService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAIwFcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:52:41.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "..\\Library\\Services\\CourseService.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Services\\CourseService.cs",
+              "RelativeToolTip": "..\\Library\\Services\\CourseService.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAowDAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T01:48:33.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InstructorService.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Services\\InstructorService.cs",
+              "RelativeDocumentMoniker": "..\\Library\\Services\\InstructorService.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Services\\InstructorService.cs",
+              "RelativeToolTip": "..\\Library\\Services\\InstructorService.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAA5wDoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T22:47:32.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "..\\Library\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Library\\Models\\Person.cs",
+              "RelativeToolTip": "..\\Library\\Models\\Person.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAnwCkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:31:11.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CourseDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\CourseDialog.xaml",
+              "RelativeDocumentMoniker": "Dialog\\CourseDialog.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\CourseDialog.xaml",
+              "RelativeToolTip": "Dialog\\CourseDialog.xaml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwCEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T18:43:38.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModel\\MainViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T02:20:05.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "InstructorDialogViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\InstructorDialogViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\InstructorDialogViewModel.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\ViewModel\\InstructorDialogViewModel.cs",
+              "RelativeToolTip": "ViewModel\\InstructorDialogViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T22:44:21.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InstructorView.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\InstructorView.xaml",
+              "RelativeDocumentMoniker": "View\\InstructorView.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\InstructorView.xaml",
+              "RelativeToolTip": "View\\InstructorView.xaml",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwEQAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T19:59:37.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAtwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T18:54:11.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "StudentsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\StudentsView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\StudentsView.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\StudentsView.xaml.cs",
+              "RelativeToolTip": "View\\StudentsView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T22:44:21.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "StudentDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\StudentDialog.xaml",
+              "RelativeDocumentMoniker": "Dialog\\StudentDialog.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\StudentDialog.xaml",
+              "RelativeToolTip": "Dialog\\StudentDialog.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T19:16:38.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "StudentDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\StudentDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialog\\StudentDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\StudentDialog.xaml.cs",
+              "RelativeToolTip": "Dialog\\StudentDialog.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:48:02.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "InstructorDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\InstructorDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Dialog\\InstructorDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\InstructorDialog.xaml.cs",
+              "RelativeToolTip": "Dialog\\InstructorDialog.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T18:26:08.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-14T00:44:56.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "Resources\\Styles\\Colors.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-14T00:45:12.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "StudentsView.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\StudentsView.xaml",
+              "RelativeDocumentMoniker": "View\\StudentsView.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\View\\StudentsView.xaml",
+              "RelativeToolTip": "View\\StudentsView.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T22:13:32.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "InstructorDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\InstructorDialog.xaml",
+              "RelativeDocumentMoniker": "Dialog\\InstructorDialog.xaml",
+              "ToolTip": "C:\\Users\\43763\\OneDrive\\Desktop\\Canvas\\Canvas\\Dialog\\InstructorDialog.xaml",
+              "RelativeToolTip": "Dialog\\InstructorDialog.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T18:43:40.679Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

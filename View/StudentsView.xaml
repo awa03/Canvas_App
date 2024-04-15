@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Canvas.View.StudentsView"
+             Title="StudentsView"
+             NavigatedTo="ContentPage_NavigatedTo">
+
+    <VerticalStackLayout
+         Padding="30,0"
+         Spacing="25">
+
+        <Label 
+            Text="StudentsView"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Select A Student"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="Header"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Text="{Binding Query, Mode=TwoWay}"  HeightRequest="20"/>
+            <Button Text ="Search" Clicked="SearchClicked" Grid.Column="1" HeightRequest="20"/>
+            <Button Text="X" Clicked="ClearSearchClicked" Grid.Column="2" HeightRequest="20" WidthRequest="20"/>
+
+        </Grid>
+
+        <ListView 
+            ItemsSource="{Binding Students, Mode=TwoWay}" 
+            SelectedItem="{Binding Path=SelectedStudent, Mode=TwoWay}"
+            SelectionMode="Single"
+            IsPullToRefreshEnabled="True"
+            HeightRequest="135"
+            ></ListView>
+
+        <Button
+            Text="Select Student"
+            HeightRequest="30"
+            Clicked="SelectStudentClicked"></Button>
+
+
+        <Button
+            Text="I'm new here!"
+            HeightRequest="30"
+            Clicked="AddStudentClicked"></Button>
+
+
+       <Button
+            Text="Delete"
+            HeightRequest="30"
+            Clicked="RemoveStudentClicked"/>
+        
+        
+ 
+
+            <Button
+            Text="Back"
+            Clicked="BackClicked"></Button>
+
+    </VerticalStackLayout>
+</ContentPage>

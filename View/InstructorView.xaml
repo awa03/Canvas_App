@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Canvas.View.InstructorView"
+             Title="InstructorView"
+             NavigatedTo="ContentPage_NavigatedTo">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+        <Label 
+            Text="Instructor"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Select An Instructor"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="Header"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Text="{Binding InstructorQuery}"  HeightRequest="20"/>
+            <Button Text ="Search" Clicked="SearchInstructorClicked" Grid.Column="1" HeightRequest="20"/>
+            <Button Text="X" Clicked="ClearInstructorSearch" Grid.Column="2" HeightRequest="20" WidthRequest="20"/>
+
+        </Grid>
+
+
+        <ListView ItemsSource="{Binding Instructors, Mode=TwoWay}" 
+                  SelectedItem="{Binding Path=SelectedInstructor, Mode=TwoWay}"
+                  IsPullToRefreshEnabled="True"
+                  HeightRequest="50"
+                  ></ListView>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Entry Grid.Column="0" Text="{Binding StudentQuery, Mode=TwoWay}"  HeightRequest="20"/>
+            <Button Text ="Search" Clicked="SearchStudentClicked" Grid.Column="1" HeightRequest="20"/>
+            <Button Text="X" Clicked="ClearStudentSearch" Grid.Column="2" HeightRequest="20" WidthRequest="20"/>
+
+
+        </Grid>
+
+
+        <ListView ItemsSource="{Binding Students, Mode=TwoWay}" 
+                  SelectedItem="{Binding Path=SelectedStudent, Mode=TwoWay}"
+                  IsPullToRefreshEnabled="True"
+                  HeightRequest="50"
+                  ></ListView>
+
+
+            <Button Text="This is me!" 
+                HeightRequest="10"
+               Clicked="EnterInstructorClicked"></Button>
+
+            <Button Text="Back" 
+                HeightRequest="10"
+               Clicked="BackClicked"></Button>
+       
+        <Grid HorizontalOptions="Center" ColumnSpacing="20" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Text="Add Student" Clicked="AddStudentClicked" 
+                    Grid.Row="0" Grid.Column="0"
+                    HeightRequest="20"/>
+
+            <Button Text="Delete Student" Clicked="DeleteStudentClicked" Grid.Row="0" Grid.Column="2"
+                     HeightRequest="20"/>
+
+            <Button Text="Edit Student" Clicked="EditStudentClicked" Grid.Row="0" Grid.Column="1"
+                     HeightRequest="20"/>
+
+
+
+            <Button Text="Add Instructor" Clicked="AddInstructorClicked" 
+                    Grid.Row="1" Grid.Column="0"
+                    HeightRequest="20"/>
+            <Button Text="Edit Instructor" Clicked="EditInstructorClicked" 
+                    Grid.Row="1" Grid.Column="1"
+                     HeightRequest="20"/>
+
+            <Button Text="Delete Instructor" Clicked="DeleteInstructorClicked" Grid.Row="1" Grid.Column="2"
+                    HeightRequest="20"/>
+        </Grid> 
+
+        
+    </VerticalStackLayout>
+</ContentPage>

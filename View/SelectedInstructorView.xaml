@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Canvas.View.SelectedInstructorView"
+             NavigatedTo="ContentPage_NavigatedTo"
+             Title="SelectedInstructorView">
+    <VerticalStackLayout Padding="20" Spacing="25">
+        <Label 
+            Text="{Binding Name}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            BackgroundColor="Red" 
+            FontSize="Header"
+            Padding="30"/>
+
+        <ScrollView >
+            <StackLayout Spacing="20">
+                <Label 
+                    Text="{Binding Email}"
+                    VerticalOptions="Center" 
+                    FontSize="Subtitle"
+                    Padding="30"
+                    HorizontalOptions="Center" />
+
+                <ListView ItemsSource="{Binding Courses, Mode=TwoWay}"
+                          SelectedItem="{Binding SelectedCourse, Mode=TwoWay}"
+                  SeparatorColor="DarkRed" 
+                  IsPullToRefreshEnabled="True" HorizontalOptions="CenterAndExpand" ScaleX="1.5" ScaleY="1.5" ></ListView>
+
+                <Grid ColumnSpacing="20" RowSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Enter Course" Clicked="EnterCourseClicked" Grid.Column="0"></Button>
+                    <Button Text="Add Course" Clicked="AddCourseClicked" Grid.Column="1"></Button>
+                    <Button Text="Edit Course" Clicked="EditCourseClicked" Grid.Column="2"></Button>
+                    <Button Text="Delete Course" Clicked="DeleteCourseClicked" Grid.Column="3"></Button>
+                    <Button Text="Back" Clicked="BackClicked" Grid.Column="4"></Button>
+                </Grid>
+
+
+            </StackLayout>
+        </ScrollView>
+
+        
+    </VerticalStackLayout>
+    
+</ContentPage>

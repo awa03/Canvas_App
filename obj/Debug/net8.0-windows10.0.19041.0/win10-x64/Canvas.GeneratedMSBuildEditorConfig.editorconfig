@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Canvas
+build_property.ProjectDir = C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Dialog/AssignmentDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.AssignmentDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialog\AssignmentDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialog\AssignmentDialog.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Dialog/CourseDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.CourseDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialog\CourseDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialog\CourseDialog.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Dialog/InstructorDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.InstructorDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialog\InstructorDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialog\InstructorDialog.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Dialog/StudentDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.StudentDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialog\StudentDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialog\StudentDialog.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/InstructorView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.InstructorView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InstructorView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InstructorView.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/SelectedCourseView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.SelectedCourseView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SelectedCourseView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SelectedCourseView.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/SelectedInstructorView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.SelectedInstructorView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SelectedInstructorView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SelectedInstructorView.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/StudentsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.StudentsView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\StudentsView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\StudentsView.xaml

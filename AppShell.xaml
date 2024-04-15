@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Canvas.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Canvas"
+    xmlns:local2="clr-namespace:Canvas.View"
+    xmlns:local3="clr-namespace:Canvas.Dialog"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Canvas">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent 
+          Title="Student"
+          ContentTemplate="{DataTemplate local2:StudentsView}"
+          Route="Student" />
+
+    <ShellContent 
+        Title="Instructor"
+        ContentTemplate="{DataTemplate local2:InstructorView}"
+        Route="Instructor" />
+    
+     <ShellContent 
+        Title="Student"
+        ContentTemplate="{DataTemplate local3:StudentDialog}"
+        Route="StudentDetail" />
+     
+    <ShellContent 
+        Title="Instructor"
+        ContentTemplate="{DataTemplate local3:InstructorDialog}"
+        Route="InstructorDetail" />
+
+    <ShellContent
+        Title="Instructor Home"
+        ContentTemplate="{DataTemplate local2:SelectedInstructorView}"
+        Route="SelectedInstructor" />
+
+    <ShellContent
+        Title="Course Home"
+        ContentTemplate="{DataTemplate local2:SelectedCourseView}"
+        Route="SelectedCourse" />
+
+    <ShellContent
+        Title="Selected Course"
+        ContentTemplate="{DataTemplate local3:CourseDialog}"
+        Route="CourseDetail" />
+
+    <ShellContent
+        Title="Assignment Details"
+        ContentTemplate="{DataTemplate local3:AssignmentDialog}"
+        Route="AssignmentDetail" />
+
+
+</Shell>
