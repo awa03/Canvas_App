@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.CourseDialog
 build_metadata.AdditionalFiles.TargetPath = Dialog\CourseDialog.xaml
 build_metadata.AdditionalFiles.RelativePath = Dialog\CourseDialog.xaml
 
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Dialog/EnrollmentDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.EnrollmentDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialog\EnrollmentDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialog\EnrollmentDialog.xaml
+
 [C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Dialog/InstructorDialog.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.InstructorDialog.xaml
@@ -51,6 +57,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.StudentDialog.xaml
 build_metadata.AdditionalFiles.TargetPath = Dialog\StudentDialog.xaml
 build_metadata.AdditionalFiles.RelativePath = Dialog\StudentDialog.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/Dialog/SubmissionDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.Dialog.SubmissionDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Dialog\SubmissionDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Dialog\SubmissionDialog.xaml
 
 [C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -76,6 +88,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.InstructorView
 build_metadata.AdditionalFiles.TargetPath = View\InstructorView.xaml
 build_metadata.AdditionalFiles.RelativePath = View\InstructorView.xaml
 
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/SelectedCourseStudentView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.SelectedCourseStudentView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SelectedCourseStudentView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SelectedCourseStudentView.xaml
+
 [C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/SelectedCourseView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.SelectedCourseView.xaml
@@ -87,6 +105,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.SelectedInstructorView.xaml
 build_metadata.AdditionalFiles.TargetPath = View\SelectedInstructorView.xaml
 build_metadata.AdditionalFiles.RelativePath = View\SelectedInstructorView.xaml
+
+[C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/SelectedStudentView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Canvas.View.SelectedStudentView.xaml
+build_metadata.AdditionalFiles.TargetPath = View\SelectedStudentView.xaml
+build_metadata.AdditionalFiles.RelativePath = View\SelectedStudentView.xaml
 
 [C:/Users/43763/OneDrive/Desktop/Canvas/Canvas/View/StudentsView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -38,7 +38,7 @@ namespace Canvas.ViewModel
 
         public StudentsViewModel() {
             studentSvc = StudentService.Current;
-            SelectedStudent = new Person();
+            SelectedStudent = null;
             Query = "";
         }
 
@@ -63,7 +63,11 @@ namespace Canvas.ViewModel
             Refresh();
         }
 
-
+        public void EnterStudent()
+        {
+            if (SelectedStudent == null) { return; }
+            Shell.Current.GoToAsync($"//SelectedStudentHome?personId={SelectedStudent.Id}");
+        }
        
         public void Refresh()
         {

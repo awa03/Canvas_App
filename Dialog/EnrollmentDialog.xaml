@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Canvas.Dialog.EnrollmentDialog"
+             NavigatedTo="ContentPage_NavigatedTo"
+             Title="EnrollmentDialog">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label 
+            Text="Please Select a Course From The List To Enroll"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ScrollView>
+            <ListView ItemsSource="{Binding AllCourses, Mode=TwoWay}" SelectedItem="{Binding SelectedCourse, Mode=TwoWay}"/>
+        </ScrollView>
+        <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Enroll" Clicked="EnrollClicked"
+                    Grid.Row="0" Grid.Column="1"/>
+
+            <Button Text="Uneroll" Clicked="UnenrollClicked"
+                    Grid.Row="0" Grid.Column="2"/>
+
+            <Button Text="Back" Clicked="BackClicked" 
+                    Grid.Row="0" Grid.Column="3"/>
+            
+        </Grid>
+
+        <Label Text="{Binding isEnrolledMsg}" Background="DarkSlateGray" Padding="20" HorizontalOptions="CenterAndExpand"
+       IsVisible="{Binding isAdded}" VerticalOptions="End"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

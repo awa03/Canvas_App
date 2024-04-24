@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Canvas.View.SelectedCourseStudentView"
+             NavigatedTo="ContentPage_NavigatedTo"
+             Title="SelectedCourseStudentView">
+    <VerticalStackLayout Spacing="20" Padding="20" HorizontalOptions="CenterAndExpand">
+        <Label 
+            Text="{Binding WelcomeMsg}"
+            BackgroundColor="Crimson"
+            FontSize="Header"
+            TextColor="White"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ListView ItemsSource="{Binding Assignments}" SelectedItem="{Binding SelectedAssignment}"/>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Open Assignment" Grid.Row="0" Grid.Column="0"
+                    Clicked="AssignmentSelectedClicked"/>
+            <Button Text="Back" Grid.Row="0" Grid.Column="1"
+                    Clicked="BackClicked"></Button>
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

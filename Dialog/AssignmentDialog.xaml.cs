@@ -3,11 +3,16 @@ using Canvas.ViewModel;
 namespace Canvas.Dialog;
 
 
+[QueryProperty(nameof(InstructorId), "instructorId")]
 [QueryProperty(nameof(PersonId), "personId")]
 [QueryProperty(nameof(CourseId), "courseId")]
 [QueryProperty(nameof(AssignmentId), "assignmentId")]
 public partial class AssignmentDialog : ContentPage
 {
+    public int InstructorId {
+        get;
+        set; 
+    }
 	public int PersonId
 	{
         get;
@@ -32,16 +37,16 @@ public partial class AssignmentDialog : ContentPage
     public void SaveClicked(object sender, EventArgs e)
     {
         (BindingContext as AssignmentDialogViewModel)?.Save();
-        Shell.Current.GoToAsync($"//SelectedCourse?personId={PersonId}&courseId={CourseId}");
+        Shell.Current.GoToAsync($"//SelectedCourse?personId={InstructorId}&courseId={CourseId}");
     }
 
     public void BackClicked(object sender, EventArgs e)
     {
-        Shell.Current.GoToAsync($"//SelectedCourse?personId={PersonId}&courseId={CourseId}");
+        Shell.Current.GoToAsync($"//SelectedCourse?personId={InstructorId}&courseId={CourseId}");
     }
 
     private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
     {
-        BindingContext = new AssignmentDialogViewModel(PersonId, CourseId, AssignmentId);
+        BindingContext = new AssignmentDialogViewModel(InstructorId, PersonId, CourseId, AssignmentId);
     }
 }

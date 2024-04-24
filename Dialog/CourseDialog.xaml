@@ -54,5 +54,6 @@
             <Button Text="Back" Clicked="BackClicked" MinimumWidthRequest="100" Grid.Column="1" Grid.Row="2" Padding="10"></Button>  
         </Grid>
 
-          </VerticalStackLayout>
+        
+    </VerticalStackLayout>
 </ContentPage>

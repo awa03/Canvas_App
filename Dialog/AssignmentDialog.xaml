@@ -15,6 +15,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -34,16 +35,32 @@
                     <Entry Placeholder="Enter total points" Text="{Binding AssignmentPoints}"  Grid.Row="3" Grid.Column="1" Keyboard="Numeric" />
 
                     <Label Text="Available Points:" Grid.Row="4" Grid.Column="0"/>
-                    <Entry Placeholder="Enter available points" Text="{Binding AssignmentPossiblePoints}}" Grid.Row="4" Grid.Column="1" Keyboard="Numeric"/>
+                    <Entry Placeholder="Enter available points" Text="{Binding AssignmentPossiblePoints}" Grid.Row="4" Grid.Column="1" Keyboard="Numeric"/>
 
                     
                     <Label Text="Add To All Students:" Grid.Row="5" Grid.Column="0"/>
                     <CheckBox IsChecked="{Binding AddToAll}" Grid.Row="5" Grid.Column="1" />
+
                 </Grid>
 
+                <Grid HorizontalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
 
-                <Button Text="Save" Clicked="SaveClicked" HorizontalOptions="CenterAndExpand"/>
-                <Button Text="Back" Clicked="BackClicked" HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Save" Clicked="SaveClicked" Grid.Row="0" Grid.Column="0"
+                            HorizontalOptions="CenterAndExpand"/>
+                    <Button Text="Back" Clicked="BackClicked" Grid.Row="0" Grid.Column="1"
+                            HorizontalOptions="CenterAndExpand"/>
+                </Grid> 
+
+
+                <Label Text="{Binding SubmissionText}" HorizontalOptions="CenterAndExpand"
+                       BackgroundColor="#222222" Padding="20"/>
 
             </StackLayout>
         </ScrollView>

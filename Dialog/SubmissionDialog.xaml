@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Canvas.Dialog.SubmissionDialog"
+             NavigatedTo="ContentPage_NavigatedTo"
+             Title="SubmissionDialog">
+    <VerticalStackLayout>
+        <Label Text="{Binding AssignmentName}"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <Entry Text="{Binding SubmissionText, Mode=TwoWay}"
+           HorizontalOptions="Center"
+           WidthRequest="500"
+           VerticalOptions="StartAndExpand"
+           Keyboard="Chat" />
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button Text="Submit"
+                    Clicked="SubmitClicked"
+                    Grid.Row="0"
+                    Grid.Column="0" />
+
+            <Button Text="Back"
+                    Clicked="BackClicked"
+                    Grid.Row="0"
+                    Grid.Column="1" />
+        </Grid>
+
+        <Label IsVisible="{Binding isSubmittedRun}"
+               Text="{Binding SubmissionMessage}"
+               TextColor="White"
+               Padding="20"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="End" />
+
+    </VerticalStackLayout>
+</ContentPage>

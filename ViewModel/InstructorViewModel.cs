@@ -111,6 +111,9 @@ namespace Canvas.ViewModel
 
         public void EnterInstructor(Shell s)
         {
+            if (SelectedInstructor == null) {
+                return; 
+            }
             s.GoToAsync($"//SelectedInstructor?personId={SelectedInstructor?.Id}");
         }
 

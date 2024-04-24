@@ -11,25 +11,9 @@ namespace Canvas.ViewModel
     public class AssignmentDialogViewModel
     {
 
-        private Course _course { get; set; }
-        public Course course {
-            get {
-                return _course; 
-            }
-            set {
-                _course = value;  
-            } 
-        }
+        public Course course { get; set; }
 
-        private Person _student { get; set; }
-        public Person student {
-            get {
-                return _student; 
-            }
-            set {
-                _student = value; 
-            } 
-        }
+        public Person student { get; set; }
 
         public string Name {
             get { 
@@ -37,15 +21,16 @@ namespace Canvas.ViewModel
                 
         }
 
-        private StudentService studentSrv { get; set; } 
-        private CourseService courseSrv { get; set; }
+        public StudentService studentSrv { get; set; } 
+        public CourseService courseSrv { get; set; }
         public Assignment LoadAssignment { get; set; }
+        public Person Instructor { get; set; }
 
         public bool AddToAll { get; set; }
 
-        public AssignmentDialogViewModel(int PersonId, int CourseId, int AssignmentId)
+        public AssignmentDialogViewModel(int InstructorId, int PersonId, int CourseId, int AssignmentId)
         {
-
+            Instructor = InstructorService.Current.GetInstructor(InstructorId);
             if (PersonId == SelectedCourseViewModel.DefaultStudentId)
             {
                 AddToAll = true;
@@ -136,9 +121,16 @@ namespace Canvas.ViewModel
         }
         
 
+        public string SubmissionText {
+            get {
+                // May change to show all submissions
+                return LoadAssignment.GetLastSubmission();
+            } 
+        }
+
         public void Save()
         {
-            if (AddToAll)
+            if (AddToAll || student == null)
             {
                 course.AddAssignmentToAllStudents(LoadAssignment);
             }

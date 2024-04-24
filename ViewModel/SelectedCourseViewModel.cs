@@ -22,8 +22,8 @@ namespace Canvas.ViewModel
             instructor = instructorSrv.GetInstructor(personId);
             _course = courseSrv.GetCourseId(courseId);
             Query = string.Empty;
-            SelectedStudent = new Person();
-            SelectedAssignment = new Assignment();
+            SelectedStudent = null;
+            SelectedAssignment = null;
         }
 
         public string Query { get; set; }
@@ -35,8 +35,8 @@ namespace Canvas.ViewModel
             }
         }
 
-        private InstructorService instructorSrv;
-        private StudentService studentSrv;
+        public InstructorService instructorSrv;
+        public StudentService studentSrv;
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -46,7 +46,7 @@ namespace Canvas.ViewModel
         }
 
 
-        private Person instructor { get; set; }
+        public Person instructor { get; set; }
         private Course _course { get; set; }
         public Course course
         {
@@ -65,9 +65,9 @@ namespace Canvas.ViewModel
             NotifyPropertyChanged(nameof(StudentsInCourse));
         }
 
-        private Person selectedStudent { get; set; }
+        private Person? selectedStudent { get; set; }
 
-        public Person SelectedStudent
+        public Person? SelectedStudent
         {
             get {
                 return selectedStudent; 
@@ -88,22 +88,22 @@ namespace Canvas.ViewModel
 
         public static int DefaultAssignmentId = 0;
         public static int DefaultStudentId = 0;
+
+        // Checks if the selected student is null, if so, it will not allow the user to add an assignment
+        // If the selected assignment is null, it will take the user to the assignment detail page with the default assignment id
+        // If the selected assignment is not null, it will take the user to the assignment detail page with the selected assignment id
         public void AddAssignment(Shell s)
         {
-            if (SelectedAssignment == null)
-            {
-                s.GoToAsync($"//AssignmentDetail?personId={DefaultStudentId}&courseId={course.Id}&assignmentId={DefaultStudentId}");
-            }
-            else
-            {
-                s.GoToAsync($"//AssignmentDetail?personId={SelectedStudent.Id}&courseId={course.Id}&assignmentId={SelectedAssignment.Id}");
-            }
+            if (selectedStudent == null) { return; } // Will implement later - j quality of life change
+            s.GoToAsync($"//AssignmentDetail?instructorId={instructor.Id}&personId={SelectedStudent?.Id}&courseId={course.Id}&assignmentId={DefaultAssignmentId}");
             NotifyPropertyChanged(nameof(SelectedStudentAssignments));
         }
 
         public void EditAssignment(Shell s)
         {
-            course.AddAssignmentToSelectStudent(SelectedStudent.Id, SelectedAssignment);
+            if(selectedStudent == null) { return;  }
+            if (SelectedAssignment == null) { return; }
+            s.GoToAsync($"//AssignmentDetail?instructorId={instructor.Id}&personId={SelectedStudent?.Id}&courseId={course.Id}&assignmentId={SelectedAssignment.Id}");
             NotifyPropertyChanged(nameof(SelectedStudentAssignments));
         }
 

@@ -49,7 +49,7 @@ namespace Canvas.ViewModel
 
                 var index2 = courseService.CourseList.IndexOf(originalCourse);
                 courseService.CourseList.RemoveAt(index2);
-                ins.courseList.Insert(index2, course);
+                courseService.CourseList.Insert(index2, course);
             }
             else
             {

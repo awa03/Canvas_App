@@ -75,7 +75,6 @@
                     </StackLayout>
                 </ScrollView>
 
-                <!-- Additional Buttons -->
                 <!-- Additional Buttons in a Grid -->
                 <Grid>
                     <Grid.ColumnDefinitions>

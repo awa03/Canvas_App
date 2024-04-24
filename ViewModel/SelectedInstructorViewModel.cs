@@ -44,7 +44,7 @@ namespace Canvas.ViewModel
         private Person instructor { get; set; }
         public Person Instructor {
             get {
-                return instructor ?? new Person(); 
+                return instructor; 
             }
             set {
                 instructor = value;
@@ -118,7 +118,8 @@ namespace Canvas.ViewModel
         {
             if (id == 0) return;
             var person = InstructorService.Current.GetInstructor(id) as Person;
-            if (person != null) {
+            if (person != null)
+            {
                 instructor = person;
             }
             

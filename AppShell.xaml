@@ -54,5 +54,31 @@
         ContentTemplate="{DataTemplate local3:AssignmentDialog}"
         Route="AssignmentDetail" />
 
+    <ShellContent
+        Title="Selected Student"
+        ContentTemplate="{DataTemplate local2:SelectedStudentView}"
+        Route="SelectedStudentHome" />
+
+    <ShellContent
+        Title="Enrollment"
+        ContentTemplate="{DataTemplate local3:EnrollmentDialog}"
+        Route="Enroll" />
+
+    
+    <ShellContent
+        Title="Student Course"
+        ContentTemplate="{DataTemplate local2:SelectedCourseStudentView}"
+        Route="SelectedStudentCourse" />
+
+    
+     <ShellContent
+        Title="Submission"
+        ContentTemplate="{DataTemplate local3:SubmissionDialog}"
+        Route="Submit" />
+
+
+
+
+
 
 </Shell>

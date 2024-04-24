@@ -52,6 +52,7 @@ namespace Canvas.ViewModel
 
         public void AddInstructor()
         {
+            if (instructor.year != Person.Classification.Staff) { instructor.year = Person.Classification.Staff; }
             if (instructor != null) InstructorService.Current.AddInstructor(instructor);
             instructor = new Person();
         }

@@ -22,6 +22,7 @@ public partial class StudentsView : ContentPage
 
 	void SelectStudentClicked(object sender, EventArgs e)
 	{
+		(BindingContext as StudentsViewModel)?.EnterStudent();
     }
 
 	void BackClicked(object sender, EventArgs e)
