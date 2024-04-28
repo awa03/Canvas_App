@@ -9,60 +9,90 @@
          Padding="30,0"
          Spacing="25">
 
-        <Label 
-            Text="StudentsView"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
         <Label
             Text="Select A Student"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             FontSize="Header"/>
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10*"/>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Entry Grid.Column="0" Text="{Binding Query, Mode=TwoWay}"  HeightRequest="20"/>
-            <Button Text ="Search" Clicked="SearchClicked" Grid.Column="1" HeightRequest="20"/>
-            <Button Text="X" Clicked="ClearSearchClicked" Grid.Column="2" HeightRequest="20" WidthRequest="20"/>
-
-        </Grid>
-
-        <ListView 
-            ItemsSource="{Binding Students, Mode=TwoWay}" 
-            SelectedItem="{Binding Path=SelectedStudent, Mode=TwoWay}"
-            SelectionMode="Single"
-            IsPullToRefreshEnabled="True"
-            HeightRequest="135"
-            ></ListView>
-
-        <Button
-            Text="Select Student"
-            HeightRequest="30"
-            Clicked="SelectStudentClicked"></Button>
+        <VerticalStackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" BackgroundColor="#262626" Padding="20">
+            <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Entry Grid.Column="0" Text="{Binding StudentQuery, Mode=TwoWay}"  HeightRequest="20" BackgroundColor="Red" Background="#0D1117" TextColor="#8c8c8c"/>
+                <ImageButton Source ="search_button.png" Clicked="SearchClicked" Grid.Column="1" HeightRequest="20" BackgroundColor="#8c8c8c"/>
+                <ImageButton Source="clear_search_button.png" Clicked="ClearSearchClicked" Grid.Column="2" HeightRequest="20" BackgroundColor="#8c8c8c"/>
 
 
-        <Button
-            Text="I'm new here!"
-            HeightRequest="30"
-            Clicked="AddStudentClicked"></Button>
+            </Grid>
 
+            <VerticalStackLayout Background="#1a1a1a" Padding="5">
 
-       <Button
-            Text="Delete"
-            HeightRequest="30"
-            Clicked="RemoveStudentClicked"/>
-        
-        
- 
+                <ListView ItemsSource="{Binding Students, Mode=TwoWay}" 
+                  SelectedItem="{Binding Path=SelectedStudent, Mode=TwoWay}"
+                  IsPullToRefreshEnabled="True"
+                  HorizontalOptions="CenterAndExpand"
+                  HeightRequest="400"
+                  >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Padding="10, 10" Spacing="10">
+                                    <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="50">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding Name}" FontSize="Small" FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding Email}" FontSize="Small" Grid.Column="1"/>
+                                        <Label Text="{Binding YearStr}" FontSize="Small" FontAttributes="Italic" Grid.Column="2"/>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
 
-            <Button
-            Text="Back"
-            Clicked="BackClicked"></Button>
+                </ListView>
+
+            </VerticalStackLayout>
+
+            <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="5" RowSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <ImageButton Source="login_button.png" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HeightRequest="40"
+                             Clicked="SelectStudentClicked"
+                             BackgroundColor="#8c8c8c"/>
+
+                <ImageButton Source="add_person_button.png" Clicked="AddStudentClicked" 
+                        Grid.Row="1" Grid.Column="0"
+                        HeightRequest="40" BackgroundColor="#8c8c8c"/>
+
+                <ImageButton Source="delete_person_button.png" Clicked="RemoveStudentClicked" Grid.Row="1" Grid.Column="1"
+                        HeightRequest="40" BackgroundColor="#8c8c8c"/>
+
+                <ImageButton Source="back_button.png" 
+                    Grid.Row="1" Grid.Column="2" HeightRequest="40"
+                    BackgroundColor="#8c8c8c"
+                   Clicked="BackClicked"></ImageButton>
+
+            </Grid>
+        </VerticalStackLayout>
 
     </VerticalStackLayout>
 </ContentPage>

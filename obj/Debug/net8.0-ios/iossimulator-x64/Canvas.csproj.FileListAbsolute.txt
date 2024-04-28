@@ -314,3 +314,14 @@ C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-
 C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\Canvas.pdb
 C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\Canvas.genruntimeconfig.cache
 C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\ref\Canvas.dll
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\add_course_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\login_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\edit_course_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\back_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\enroll_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\delete_course_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\search_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\delete_person_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\edit_person_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\add_person_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\clear_search_button.png

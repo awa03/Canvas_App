@@ -3,52 +3,65 @@
              x:Class="Canvas.View.SelectedStudentView"
              NavigatedTo="ContentPage_NavigatedTo"
              Title="SelectedStudentView">
-    <VerticalStackLayout Padding="10">
-        <Label 
+     <VerticalStackLayout Padding="10" HorizontalOptions="FillAndExpand" >
+        <VerticalStackLayout Padding="5" HorizontalOptions="FillAndExpand" Spacing="10"
+                     BackgroundColor="#262626">
+            <Label 
             Text="{Binding WelcomeMsg}"
-            VerticalOptions="Center" 
-            Padding="5"
-            BackgroundColor="#1E1E1E"
-            HorizontalOptions="Center" />
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" 
+            BackgroundColor="Red" 
+            FontSize="Header"
+            Padding="30"/>
 
-        <ListView ItemsSource="{Binding DisplayCourseList, Mode=TwoWay}" 
-                  SelectedItem="{Binding SelectedCourse, Mode=TwoWay}" 
-                  Header="Course List" HorizontalOptions="CenterAndExpand">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid HorizontalOptions="Center">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition></ColumnDefinition>
-                                <ColumnDefinition></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Name}"  Grid.Column="0"/>
-                            <Label Text="{Binding Code}"  Grid.Column="2"/>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            <StackLayout Padding="20" HorizontalOptions="FillAndExpand" BackgroundColor="#333333">
 
-        <Grid HorizontalOptions="CenterAndExpand" RowSpacing="10">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <VerticalStackLayout Background="#1a1a1a" HorizontalOptions="Fill" Padding="10" >
+                    <ListView ItemsSource="{Binding DisplayCourseList, Mode=TwoWay}" HeightRequest="400"
+                          SelectedItem="{Binding SelectedCourse, Mode=TwoWay}" BackgroundColor="#333333"
+                  SeparatorColor="DarkRed" 
+                  IsPullToRefreshEnabled="True" HorizontalOptions="FillAndExpand" HorizontalScrollBarVisibility="Always">
+                        <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                    <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="10" Padding="40">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding Name}" FontSize="Small" FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding Code}" FontSize="Small" Grid.Column="1"/>
+                                    </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
-            <Button Text="Select Course" Clicked="SelectClicked"
-                    Grid.Row="0" Grid.Column="0"/>
 
-            <Button Text="Enrollment Options" Clicked="EnrollClicked"
-                    Grid.Row="0" Grid.Column="1"/>
+                    <Grid ColumnSpacing="5" HorizontalOptions="FillAndExpand" VerticalOptions="End" RowSpacing="5" Padding="30" BackgroundColor="#1a1a1a" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-            <Button Text="Back" Clicked="BackClicked" 
-                    Grid.Row="0" Grid.Column="2"/>
-        </Grid>
+                    <ImageButton Source="login_button.png" Clicked="SelectClicked" Grid.Column="0" BackgroundColor="#8c8c8c"></ImageButton>
+                    <ImageButton Source="enroll_button.png" Clicked="EnrollClicked" Grid.Column="1" BackgroundColor="#8c8c8c"></ImageButton>
+                    <ImageButton Source="back_button.png" Clicked="BackClicked" Grid.Column="2" BackgroundColor="#8c8c8c"></ImageButton>
+                </Grid>
+                </VerticalStackLayout>
+
+
+            </StackLayout>
+
+        </VerticalStackLayout>
 
     </VerticalStackLayout>
+
 </ContentPage>

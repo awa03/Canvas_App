@@ -1073,3 +1073,14 @@ C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\stamp\_Co
 C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\add_course_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\add_person_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\back_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\clear_search_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\delete_course_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\delete_person_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\edit_course_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\edit_person_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\enroll_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\login_button.png
+C:\Users\43763\OneDrive\Desktop\Canvas\Canvas\obj\Debug\net8.0-android\resizetizer\r\drawable\search_button.png

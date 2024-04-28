@@ -19,7 +19,7 @@ public partial class InstructorView : ContentPage
 	void DeleteStudentClicked(object sender, EventArgs e)
 	{
 
-		(BindingContext as InstructorViewModel)?.EditStudentClicked(Shell.Current);
+		(BindingContext as InstructorViewModel)?.DeleteStudent();
     }
 
 	void DeleteInstructorClicked(object sender, EventArgs e)

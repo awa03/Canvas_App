@@ -4,56 +4,71 @@
              x:Class="Canvas.Dialog.CourseDialog"
              NavigatedTo="ContentPage_NavigatedTo"
              Title="CourseDialog">
-    <VerticalStackLayout>
+     <VerticalStackLayout
+            BackgroundColor="#1a1a1a" 
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand"
+        >
+
         <Label 
             Text="Course Details"
             FontSize="Header"
             VerticalOptions="Center" 
             MinimumHeightRequest="40"
-            HorizontalOptions="Center" Padding="30"/>
+            HorizontalOptions="Center" />
 
 
-        <Grid HorizontalOptions="Center" Padding="20">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
+        <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="5" VerticalOptions="FillAndExpand" BackgroundColor="#333333" Padding="10">
 
-            <Label Text="Course Name" Padding="10" FontSize="Small"  Grid.Column="0"
-                Grid.Row="0" BackgroundColor="Grey" Opacity="0.9" TextColor="White"/>
-            <Entry Text="{Binding CourseName}" MinimumWidthRequest="200" HeightRequest="40" Grid.Column="1" Grid.Row="0"/>
+            <VerticalStackLayout BackgroundColor="#1a1a1a" HorizontalOptions="FillAndExpand">
 
-            <Label Text="Course Code" Padding="10" FontSize="Small"  Grid.Column="0"
-                Grid.Row="1" BackgroundColor="Grey" Opacity="0.9" TextColor="White"/>
-            <Entry Text="{Binding CourseCode}" MinimumWidthRequest="200" HeightRequest="40" Grid.Column="1" Grid.Row="1"/>
+                <Grid HorizontalOptions="FillAndExpand" Padding="10" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="12*"/>
+                    </Grid.ColumnDefinitions>
 
-            <Label Text="Course Description" Padding="10" FontSize="Small"  Grid.Column="0"
-                Grid.Row="2" BackgroundColor="Grey" Opacity="0.9" TextColor="White"/>
-            <Entry Text="{Binding CourseDesc}" MinimumWidthRequest="200" HeightRequest="40" Grid.Column="1" Grid.Row="2"/>
+                    <Image Source="name_image.png"  Grid.Column="0" HeightRequest="40"
+                            Grid.Row="0" BackgroundColor="Grey"/>
+                    <Entry Text="{Binding CourseName}"  HeightRequest="40" Grid.Column="1" Grid.Row="0"/>
 
-        </Grid>
-        
-         <Grid HorizontalOptions="Center" Padding="10" ColumnSpacing="20">
+                    <Image Source="code_image.png"  Grid.Column="0" HeightRequest="40"
+                            Grid.Row="1" BackgroundColor="Grey"/>
+                    <Entry Text="{Binding CourseCode}" HeightRequest="40" Grid.Column="1" Grid.Row="1"/>
 
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
+                    <Image Source="desc_image.png"  Grid.Column="0" HeightRequest="40"
+                            Grid.Row="2" BackgroundColor="Grey"/>
+                    <Entry Text="{Binding CourseDesc}" HeightRequest="40" Grid.Column="1" Grid.Row="2"/>
 
-            <Button Text="Submit" Clicked="SubmitClicked" MinimumWidthRequest="100" Grid.Column="0" Grid.Row="2" Padding="10"></Button>  
-            <Button Text="Back" Clicked="BackClicked" MinimumWidthRequest="100" Grid.Column="1" Grid.Row="2" Padding="10"></Button>  
-        </Grid>
 
-        
+                </Grid>
+            </VerticalStackLayout>
+            <VerticalStackLayout BackgroundColor="#1a1a1a">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10" ColumnSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <ImageButton Source="add_button.png"  BackgroundColor="#8c8c8c" Clicked="SubmitClicked" HeightRequest="50" Grid.Column="0" Grid.Row="2"></ImageButton>
+                    <ImageButton Source="back_button.png" Clicked="BackClicked"  BackgroundColor="#8c8c8c" HeightRequest="50" Grid.Column="1" Grid.Row="2"></ImageButton>
+                </Grid>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+
     </VerticalStackLayout>
-</ContentPage>
+
+    <!-- Difference  -->
+
+   </ContentPage>

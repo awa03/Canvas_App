@@ -10,33 +10,60 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <ScrollView>
-            <ListView ItemsSource="{Binding AllCourses, Mode=TwoWay}" SelectedItem="{Binding SelectedCourse, Mode=TwoWay}"/>
-        </ScrollView>
-        <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="20">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        
+        <StackLayout Padding="20" HorizontalOptions="FillAndExpand" BackgroundColor="#333333">
 
-            <Button Text="Enroll" Clicked="EnrollClicked"
-                    Grid.Row="0" Grid.Column="1"/>
+                <VerticalStackLayout Background="#1a1a1a" HorizontalOptions="Fill" Padding="10" >
+                    <ListView ItemsSource="{Binding AllCourses, Mode=TwoWay}" HeightRequest="400"
+                          SelectedItem="{Binding SelectedCourse, Mode=TwoWay}" BackgroundColor="#333333"
+                  SeparatorColor="DarkRed" 
+                  IsPullToRefreshEnabled="True" HorizontalOptions="FillAndExpand" HorizontalScrollBarVisibility="Always">
+                        <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                    <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="10" Padding="40">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding Name}" FontSize="Small" FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding Code}" FontSize="Small" Grid.Column="1"/>
+                                    </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
-            <Button Text="Uneroll" Clicked="UnenrollClicked"
-                    Grid.Row="0" Grid.Column="2"/>
 
-            <Button Text="Back" Clicked="BackClicked" 
-                    Grid.Row="0" Grid.Column="3"/>
-            
-        </Grid>
+                    <Grid ColumnSpacing="5" HorizontalOptions="FillAndExpand" VerticalOptions="End" RowSpacing="5" Padding="30" BackgroundColor="#1a1a1a" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-        <Label Text="{Binding isEnrolledMsg}" Background="DarkSlateGray" Padding="20" HorizontalOptions="CenterAndExpand"
-       IsVisible="{Binding isAdded}" VerticalOptions="End"/>
+                    <ImageButton Source="add_button.png" Clicked="EnrollClicked" Grid.Column="0" BackgroundColor="#8c8c8c"></ImageButton>
+                    <ImageButton Source="sub_button.png" Clicked="UnenrollClicked" Grid.Column="1" BackgroundColor="#8c8c8c"></ImageButton>
+                    <ImageButton Source="back_button.png" Clicked="BackClicked" Grid.Column="2" BackgroundColor="#8c8c8c"></ImageButton>
+                </Grid>
+                </VerticalStackLayout>
+
+
+            </StackLayout>
+
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Label Text="{Binding isEnrolledMsg}" Background="#262626" Padding="20" HorizontalOptions="FillAndExpand"
+           IsVisible="{Binding isAdded}" VerticalOptions="End"/>
+        </StackLayout>
+
+
+
 
 
     </VerticalStackLayout>

@@ -4,58 +4,73 @@
              x:Class="Canvas.Dialog.StudentDialog"
              NavigatedTo="OnArriving"
              Title="StudentDialog">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+            BackgroundColor="#1a1a1a" 
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand"
+        >
+
         <Label 
-            Text="New Student"
+            Text="Student Details"
             FontSize="Header"
             VerticalOptions="Center" 
             MinimumHeightRequest="40"
             HorizontalOptions="Center" />
 
 
-        <Grid HorizontalOptions="Center" Padding="10" >
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
+        <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="5" VerticalOptions="FillAndExpand" BackgroundColor="#333333" Padding="10">
 
-            <Label Text="Name" Padding="10" FontSize="Small"  Grid.Column="0"
-                Grid.Row="0" BackgroundColor="Grey" Opacity="0.9" TextColor="White"/>
-            <Entry Text="{Binding Name}" MinimumWidthRequest="200" HeightRequest="40" Grid.Column="1" Grid.Row="0"/>
+            <VerticalStackLayout BackgroundColor="#1a1a1a" HorizontalOptions="FillAndExpand">
 
-            <Label Text="Email" Padding="10" FontSize="Small"  Grid.Column="0"
-                Grid.Row="1" BackgroundColor="Grey" Opacity="0.9" TextColor="White"/>
-            <Entry Text="{Binding Email}" MinimumWidthRequest="200" HeightRequest="40" Grid.Column="2" Grid.Row="1"/>
+                <Grid HorizontalOptions="FillAndExpand" Padding="10" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="12*"/>
+                    </Grid.ColumnDefinitions>
 
+                    <Image Source="name_image.png"  Grid.Column="0" HeightRequest="40"
+                            Grid.Row="0" BackgroundColor="Grey"/>
+                    <Entry Text="{Binding Name}"  HeightRequest="40" Grid.Column="1" Grid.Row="0"/>
 
-            <Label Text="Year" Padding="10" FontSize="Small"  Grid.Column="0"
-                Grid.Row="3" BackgroundColor="Grey" Opacity="0.9" TextColor="White"/>
-            <Picker FontSize="Small" SelectedIndex="0" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"
-            ItemsSource="{Binding YearOptions}" SelectedItem="{Binding SelectedYear}"/>
+                    <Image Source="email_image.png"  Grid.Column="0" HeightRequest="40"
+                            Grid.Row="1" BackgroundColor="Grey"/>
+                    <Entry Text="{Binding Email}" HeightRequest="40" Grid.Column="1" Grid.Row="1"/>
 
+                    
+                    <Image Source="year_image.png"   Grid.Column="0"
+                        Grid.Row="2" BackgroundColor="Grey" Opacity="0.9" HeightRequest="40"/>
+                    <Picker FontSize="Small" SelectedIndex="0" Grid.Column="1" Grid.Row="2" 
+                        HeightRequest="40"
+                        ItemsSource="{Binding YearOptions}" SelectedItem="{Binding SelectedYear}"/>
 
-        </Grid>
-         <Grid HorizontalOptions="Center" Padding="10" ColumnSpacing="20">
+                </Grid>
+            </VerticalStackLayout>
+            <VerticalStackLayout BackgroundColor="#1a1a1a">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10" ColumnSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
 
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
+                    <ImageButton Source="add_person_button.png"  BackgroundColor="#8c8c8c" Clicked="SubmitClicked" HeightRequest="50" Grid.Column="0" Grid.Row="2"></ImageButton>
+                    <ImageButton Source="back_button.png" Clicked="BackClicked"  BackgroundColor="#8c8c8c" HeightRequest="50" Grid.Column="1" Grid.Row="2"></ImageButton>
+                </Grid>
+            </VerticalStackLayout>
 
-            <Button Text="Submit" Clicked="SubmitClicked" MinimumWidthRequest="100" Grid.Column="0" Grid.Row="2" Padding="10"></Button>  
-            <Button Text="Back" Clicked="BackClicked" MinimumWidthRequest="100" Grid.Column="1" Grid.Row="2" Padding="10"></Button>  
-        </Grid>
-
+        </VerticalStackLayout>
 
 
     </VerticalStackLayout>
-</ContentPage>
+</ContentPage>  
+
+
+

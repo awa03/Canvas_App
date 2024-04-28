@@ -4,50 +4,69 @@
              x:Class="Canvas.View.SelectedInstructorView"
              NavigatedTo="ContentPage_NavigatedTo"
              Title="SelectedInstructorView">
-    <VerticalStackLayout Padding="20" Spacing="25">
-        <Label 
+    <VerticalStackLayout Padding="10" HorizontalOptions="FillAndExpand" >
+        <VerticalStackLayout Padding="5" HorizontalOptions="FillAndExpand" Spacing="10"
+                     BackgroundColor="#262626">
+            <Label 
             Text="{Binding Name}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" 
             BackgroundColor="Red" 
             FontSize="Header"
             Padding="30"/>
 
-        <ScrollView >
-            <StackLayout Spacing="20">
-                <Label 
-                    Text="{Binding Email}"
-                    VerticalOptions="Center" 
-                    FontSize="Subtitle"
-                    Padding="30"
-                    HorizontalOptions="Center" />
+            <StackLayout Padding="20" HorizontalOptions="FillAndExpand" BackgroundColor="#333333">
 
-                <ListView ItemsSource="{Binding Courses, Mode=TwoWay}"
-                          SelectedItem="{Binding SelectedCourse, Mode=TwoWay}"
+                <VerticalStackLayout Background="#1a1a1a" HorizontalOptions="Fill" Padding="10" >
+                    <ListView ItemsSource="{Binding Courses, Mode=TwoWay}" HeightRequest="400"
+                          SelectedItem="{Binding SelectedCourse, Mode=TwoWay}" BackgroundColor="#333333"
                   SeparatorColor="DarkRed" 
-                  IsPullToRefreshEnabled="True" HorizontalOptions="CenterAndExpand" ScaleX="1.5" ScaleY="1.5" ></ListView>
+                  IsPullToRefreshEnabled="True" HorizontalOptions="FillAndExpand" HorizontalScrollBarVisibility="Always">
+                        <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                    <Grid HorizontalOptions="FillAndExpand" ColumnSpacing="10" Padding="40">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding Name}" FontSize="Small" FontAttributes="Bold" Grid.Column="0"/>
+                                        <Label Text="{Binding Code}" FontSize="Small" Grid.Column="1"/>
+                                    </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
-                <Grid ColumnSpacing="20" RowSpacing="20">
+
+                    <Grid ColumnSpacing="5" HorizontalOptions="FillAndExpand" VerticalOptions="End" RowSpacing="5" Padding="30" BackgroundColor="#1a1a1a" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button Text="Enter Course" Clicked="EnterCourseClicked" Grid.Column="0"></Button>
-                    <Button Text="Add Course" Clicked="AddCourseClicked" Grid.Column="1"></Button>
-                    <Button Text="Edit Course" Clicked="EditCourseClicked" Grid.Column="2"></Button>
-                    <Button Text="Delete Course" Clicked="DeleteCourseClicked" Grid.Column="3"></Button>
-                    <Button Text="Back" Clicked="BackClicked" Grid.Column="4"></Button>
+                    <ImageButton Source="login_button.png" Clicked="EnterCourseClicked" Grid.Column="0" BackgroundColor="#8c8c8c"></ImageButton>
+                    <ImageButton Source="add_course_button.png" Clicked="AddCourseClicked" Grid.Column="1" BackgroundColor="#8c8c8c"></ImageButton>
+                    <ImageButton Source="edit_course_button.png" Clicked="EditCourseClicked" Grid.Column="2" BackgroundColor="#8c8c8c"></ImageButton>
+                    <ImageButton Source="delete_course_button.png"  Clicked="DeleteCourseClicked" Grid.Column="3" BackgroundColor="#8c8c8c" ></ImageButton>
+                    <ImageButton Source="back_button.png" Clicked="BackClicked" Grid.Column="4" BackgroundColor="#8c8c8c"></ImageButton>
                 </Grid>
+                </VerticalStackLayout>
 
 
             </StackLayout>
-        </ScrollView>
 
-        
+        </VerticalStackLayout>
+
     </VerticalStackLayout>
     
 </ContentPage>
