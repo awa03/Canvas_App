@@ -86,7 +86,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                                <ImageButton Source="add_person_button.png" Clicked="AddInstructorClicked" 
+                <ImageButton Source="add_person_button.png" Clicked="AddInstructorClicked" 
                         Grid.Row="1" Grid.Column="0"
                         HeightRequest="20" BackgroundColor="#8c8c8c"/>
                 <ImageButton Source="edit_person_button.png" Clicked="EditInstructorClicked" 

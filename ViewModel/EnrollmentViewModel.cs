@@ -31,6 +31,7 @@ namespace Canvas.ViewModel
                 throw new Exception("Error Loading Enrollment");
             }
             student = studentSrv.GetStudent(PersonId);
+            SelectedCourse = null;
         }
 
         public void Enroll()
@@ -38,7 +39,7 @@ namespace Canvas.ViewModel
             if (SelectedCourse == null)
             {
                 isAdded = false;
-                isEnrolledMsg = $"Error in Erolling in {SelectedCourse.Name}";
+                isEnrolledMsg = $"Please Select A Course";
             }
             else
             {
@@ -53,7 +54,7 @@ namespace Canvas.ViewModel
             if (SelectedCourse == null)
             {
                 isAdded = false;
-                isEnrolledMsg = $"Error in Unerolling from {SelectedCourse.Name}";
+                isEnrolledMsg = $"Please Select A Course";
             }
             else
             {

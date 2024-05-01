@@ -4,45 +4,74 @@
              x:Class="Canvas.Dialog.SubmissionDialog"
              NavigatedTo="ContentPage_NavigatedTo"
              Title="SubmissionDialog">
-    <VerticalStackLayout>
-        <Label Text="{Binding AssignmentName}"
+    <VerticalStackLayout Spacing="20" Padding="10" BackgroundColor="#222222">
+        <VerticalStackLayout Padding="20" BackgroundColor="#262626" Spacing="10" VerticalOptions="FillAndExpand" WidthRequest="1200">
+
+                <Label HeightRequest="50"/>
+
+                <Label Text="{Binding AssignmentName}"
+                FontSize="Header"
+                BackgroundColor="#ff4d4d"
+                TextColor="Black"
+                Padding="20"
+                WidthRequest="1000"
                VerticalOptions="Center"
                HorizontalOptions="Center" />
 
-        <Entry Text="{Binding SubmissionText, Mode=TwoWay}"
-           HorizontalOptions="Center"
-           WidthRequest="500"
-           VerticalOptions="StartAndExpand"
+                <Label Text="{Binding AssignmentDesc}"
+                Padding="20"
+                BackgroundColor="#404040"
+                TextColor="White"
+                WidthRequest="1000"
+                FontSize="Subtitle"
+                VerticalTextAlignment="Center"
+                VerticalOptions="Center" HeightRequest="60"
+                HorizontalOptions="Center" />
+
+            <Editor Text="{Binding SubmissionText, Mode=TwoWay}"
+           HorizontalOptions="CenterAndExpand" WidthRequest="1000" BackgroundColor="#666666"
+           HeightRequest="200"
+           VerticalOptions="Start"
            Keyboard="Chat" />
 
+            <Label Text="{Binding AssignmentDueDate}" HeightRequest="60" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Subtitle" FontAttributes="Bold"
+                   BackgroundColor="#e6ffe6" TextColor="Black" Padding="10" WidthRequest="1000"/>
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+            <Label Text="{Binding PossiblePoints}" HeightRequest="40" BackgroundColor="#404040" TextColor="White" Padding="5" WidthRequest="1000" HorizontalTextAlignment="Center"/>
 
-            <Button Text="Submit"
+            <Grid WidthRequest="1000" HeightRequest="40" RowSpacing="10" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+
+                    <ImageButton Source="done_image.png" VerticalOptions="Center"
                     Clicked="SubmitClicked"
                     Grid.Row="0"
                     Grid.Column="0" />
 
-            <Button Text="Back"
+                    <ImageButton Source="back_button.png" VerticalOptions="Center"
                     Clicked="BackClicked"
                     Grid.Row="0"
                     Grid.Column="1" />
-        </Grid>
+                </Grid>
 
-        <Label IsVisible="{Binding isSubmittedRun}"
+                <Label IsVisible="{Binding isSubmitRun}"
                Text="{Binding SubmissionMessage}"
                TextColor="White"
                Padding="20"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="End" />
+
+                <Label HeightRequest="50"/>
+
+            </VerticalStackLayout>
+
+
 
     </VerticalStackLayout>
 </ContentPage>

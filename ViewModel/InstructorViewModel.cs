@@ -16,8 +16,8 @@ namespace Canvas.ViewModel
         private InstructorService instructorSvc;
         private StudentService studentSvc;
         private Person? NewInstructor;
-        public Person SelectedStudent { get; set; } 
-        public Person SelectedInstructor { get; set; } 
+        public Person? SelectedStudent { get; set; } 
+        public Person? SelectedInstructor { get; set; } 
 
         public Person? newInstructor
         {
@@ -80,8 +80,8 @@ namespace Canvas.ViewModel
         {
             instructorSvc = InstructorService.Current;
             studentSvc = StudentService.Current;
-            SelectedInstructor = new Person();
-            SelectedStudent = new Person();
+            SelectedInstructor = null;
+            SelectedStudent = null;
             NewInstructor = new Person();
         }
 

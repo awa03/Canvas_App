@@ -4,65 +4,85 @@
              x:Class="Canvas.Dialog.AssignmentDialog"
              NavigatedTo="ContentPage_NavigatedTo"
              Title="AssignmentDialog">
-    <VerticalStackLayout>
-        <ScrollView>
-            <StackLayout Padding="10">
-                <Grid HorizontalOptions="CenterAndExpand">
+
+
+     <VerticalStackLayout
+            BackgroundColor="#1a1a1a" 
+             HorizontalOptions="FillAndExpand"
+             VerticalOptions="FillAndExpand"
+        >
+
+        <Label 
+            Text="Course Details"
+            FontSize="Header"
+            VerticalOptions="Center" 
+            MinimumHeightRequest="40"
+            HorizontalOptions="Center" />
+
+
+        <VerticalStackLayout HorizontalOptions="FillAndExpand" Spacing="5" VerticalOptions="FillAndExpand" BackgroundColor="#333333" Padding="10">
+
+            <VerticalStackLayout BackgroundColor="#1a1a1a" HorizontalOptions="FillAndExpand">
+
+                <Grid HorizontalOptions="FillAndExpand" Padding="10" >
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="12*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="Assignment Name:" Grid.Row="0" Grid.Column="0"/>
+                    
+                    <Image Source="assignment_name_button.png" Grid.Row="0" Grid.Column="0"  BackgroundColor="#8c8c8c"/>
                     <Entry Placeholder="Enter assignment name" Grid.Row="0" Grid.Column="1" Text="{Binding AssignmentName}"/>
 
-                    <Label Text="Assignment Description:" Grid.Row="1" Grid.Column="0"/>
+                    <Image Source="assignment_description_button.png" Grid.Row="1" Grid.Column="0" BackgroundColor="#8c8c8c"/>
                     <Entry Placeholder="Enter assignment description" Grid.Row="1" Grid.Column="1" Text="{Binding AssignmentDescription}"/>
 
-                    <Label Text="Due Date:" Grid.Row="2" Grid.Column="0"/>
+                    <Image Source="assignment_date_button.png" Grid.Row="2" Grid.Column="0" BackgroundColor="#8c8c8c"/>
                     <DatePicker Grid.Row="2" Grid.Column="1" Date="{Binding AssignmentDueDate}" />
 
-                    <Label Text="Points:" Grid.Row="3" Grid.Column="0"/>
+                    <Image Source="assignment_points.png" Grid.Row="3" Grid.Column="0" BackgroundColor="#8c8c8c"/>
                     <Entry Placeholder="Enter total points" Text="{Binding AssignmentPoints}"  Grid.Row="3" Grid.Column="1" Keyboard="Numeric" />
 
-                    <Label Text="Available Points:" Grid.Row="4" Grid.Column="0"/>
-                    <Entry Placeholder="Enter available points" Text="{Binding AssignmentPossiblePoints}" Grid.Row="4" Grid.Column="1" Keyboard="Numeric"/>
+                    <Image Source="smashicons_avail_points.png" Grid.Row="4" Grid.Column="0" BackgroundColor="#8c8c8c"/>
+                    <Entry Placeholder="Enter available points" Text="{Binding AssignmentPossiblePoints}" Grid.Row="4" 
+                           Grid.Column="1" Keyboard="Numeric"/>
 
-                    
-                    <Label Text="Add To All Students:" Grid.Row="5" Grid.Column="0"/>
+                    <Image Source="add_all_image.png" Grid.Row="5" Grid.Column="0" BackgroundColor="#8c8c8c"/>
                     <CheckBox IsChecked="{Binding AddToAll}" Grid.Row="5" Grid.Column="1" />
 
-                </Grid>
 
-                <Grid HorizontalOptions="CenterAndExpand">
+                </Grid>
+            </VerticalStackLayout>
+            <VerticalStackLayout BackgroundColor="#1a1a1a">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10" ColumnSpacing="20">
                     <Grid.RowDefinitions>
+                        <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    <Button Text="Save" Clicked="SaveClicked" Grid.Row="0" Grid.Column="0"
-                            HorizontalOptions="CenterAndExpand"/>
-                    <Button Text="Back" Clicked="BackClicked" Grid.Row="0" Grid.Column="1"
-                            HorizontalOptions="CenterAndExpand"/>
-                </Grid> 
-
+                    <ImageButton Source="add_button.png"  BackgroundColor="#8c8c8c" Clicked="SaveClicked" HeightRequest="50" Grid.Column="0" Grid.Row="2"></ImageButton>
+                    <ImageButton Source="back_button.png" Clicked="BackClicked"  BackgroundColor="#8c8c8c" HeightRequest="50" Grid.Column="1" Grid.Row="2"></ImageButton>
+                </Grid>
 
                 <Label Text="{Binding SubmissionText}" HorizontalOptions="CenterAndExpand"
                        BackgroundColor="#222222" Padding="20"/>
 
-            </StackLayout>
-        </ScrollView>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
     </VerticalStackLayout>
-</ContentPage>
+
+  </ContentPage>

@@ -4,32 +4,59 @@
              x:Class="Canvas.View.SelectedCourseStudentView"
              NavigatedTo="ContentPage_NavigatedTo"
              Title="SelectedCourseStudentView">
-    <VerticalStackLayout Spacing="20" Padding="20" HorizontalOptions="CenterAndExpand">
+    <VerticalStackLayout Spacing="20" Padding="20" HorizontalOptions="FillAndExpand" Background="#222222">
         <Label 
             Text="{Binding WelcomeMsg}"
             BackgroundColor="Crimson"
             FontSize="Header"
             TextColor="White"
+            Padding="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <ListView ItemsSource="{Binding Assignments}" SelectedItem="{Binding SelectedAssignment}"/>
+        <VerticalStackLayout Padding="10" BackgroundColor="#404040" HorizontalOptions="FillAndExpand" Spacing="10">
+
+            <ListView ItemsSource="{Binding Assignments}" SelectedItem="{Binding SelectedAssignment}" HorizontalOptions="FillAndExpand" HeightRequest="400" BackgroundColor="#1e1e1e">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout Padding="10">
+                            <Grid HorizontalOptions="FillAndExpand" HeightRequest="40" Padding="2" BackgroundColor="#333333">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="smashicons_avail_points.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" WidthRequest="40"></Image>
+                                <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"></Label>
+                                <Label Text="{Binding Grade}" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center"></Label>
+                            </Grid>
+                        </VerticalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
 
 
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-            <Button Text="Open Assignment" Grid.Row="0" Grid.Column="0"
+                <ImageButton Source="done_image.png" Grid.Row="0" Grid.Column="0" HeightRequest="40"
                     Clicked="AssignmentSelectedClicked"/>
-            <Button Text="Back" Grid.Row="0" Grid.Column="1"
-                    Clicked="BackClicked"></Button>
-        </Grid>
+                <ImageButton Source="back_button.png" Grid.Row="0" Grid.Column="1" HeightRequest="40"
+                    Clicked="BackClicked"></ImageButton>
+            </Grid>
+        </VerticalStackLayout>
 
     </VerticalStackLayout>
 </ContentPage>

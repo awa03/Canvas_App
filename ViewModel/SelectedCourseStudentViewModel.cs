@@ -55,6 +55,7 @@ namespace Canvas.ViewModel
         }
 
         // Public accessors for the private fields
+
         public Person student
         {
             get

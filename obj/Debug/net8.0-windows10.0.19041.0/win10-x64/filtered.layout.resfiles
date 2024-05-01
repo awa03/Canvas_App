@@ -1,5 +1,6 @@
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
+add_all_image.scale-100.png
 add_button.scale-100.png
 add_course_button.scale-100.png
 add_person_button.scale-100.png
@@ -49,6 +50,10 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+assignment_date_button.scale-100.png
+assignment_description_button.scale-100.png
+assignment_name_button.scale-100.png
+assignment_points.scale-100.png
 back_button.scale-100.png
 canvas_logo.scale-100.png
 clear_search_button.scale-100.png
@@ -56,6 +61,7 @@ code_image.scale-100.png
 delete_course_button.scale-100.png
 delete_person_button.scale-100.png
 desc_image.scale-100.png
+done_image.scale-100.png
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
@@ -67,7 +73,9 @@ email_image.scale-100.png
 enroll_button.scale-100.png
 login_button.scale-100.png
 name_image.scale-100.png
+person_image.scale-100.png
 search_button.scale-100.png
+smashicons_avail_points.scale-100.png
 sub_button.scale-100.png
 year_image.scale-100.png
 splashSplashScreen.scale-100.png

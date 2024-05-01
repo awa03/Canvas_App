@@ -83,11 +83,31 @@ namespace Canvas.ViewModel
 
         // Data Binding Text ---- Only used for displaying
 
+        public string AssignmentDesc
+        {
+            get
+            {
+                return SelectedAssignment.Desc ?? string.Empty;
+            }
+        }
+
+        public string AssignmentDueDate {
+            get {
+                return SelectedAssignment.DueDate.ToString(); 
+            } 
+        }
+
+        public string PossiblePoints {
+            get {
+                return SelectedAssignment.PossiblePoints.ToString() ?? string.Empty; 
+            } 
+        }
+
         public string AssignmentName
         {
             get
             {
-                return SelectedAssignment.Name;
+                return SelectedAssignment.Name ?? string.Empty;
             }
         }
 
